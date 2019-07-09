@@ -17,6 +17,19 @@ class Game{
     var gameState : GameState = .onGoing
     var cells : [Cell]
     let cols : Int
+    var foundAllBombs: Bool{
+        var unRevealedCells = 0
+        var bombedCells = 0
+        for index in cells.indices{
+            if !cells[index].revealed{
+                unRevealedCells += 1
+            }
+            if cells[index].hasMine{
+                bombedCells += 1
+            }
+        }
+        return unRevealedCells == bombedCells
+    }
     init(cellNums: Int, colsNum:Int, mines: Int){
         self.cells = Array()
         self.cols = colsNum
@@ -90,13 +103,16 @@ class Game{
         }
         return neighborCells
     }
-    func revealCell(_ currentCell: Int)-> Bool{
+    
+    func revealCell(_ currentCell: Int){
         print("revealing cell: \(currentCell)")
         if self.cells[currentCell].hasMine {
             gameState = .clickedBomb
-            return false
         } else{
             self.cells[currentCell].revealed = true
+            if foundAllBombs{
+                gameState = .youWon
+            }else{
             let neighbors = neighborBombs(index: currentCell)
             if neighbors == 0 {
                 for neighbor in myNeighbors(currentCell){
@@ -107,8 +123,9 @@ class Game{
                     }
                 }
             }
+                gameState = .onGoing
+            }
         }
-        return true
     }
 }
 

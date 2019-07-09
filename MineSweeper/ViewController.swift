@@ -36,13 +36,26 @@ class ViewController: UIViewController {
     @IBAction func revealButton(_ sender: UIButton) {
         if let cellNumber = viewButtons.firstIndex(of: sender){
             print(cellNumber)
-            if !(myGame!.revealCell(cellNumber)){
-                endGame(theBomb: cellNumber)
-                //startNewGame()
+            myGame!.revealCell(cellNumber)
+            switch myGame!.gameState{
+            case .clickedBomb: endGame(theBomb: cellNumber)
+            case .onGoing: updateView()
+            case .youWon: celebrate()
             }
-            else{updateView()}
         }
     }
+    func celebrate(){
+        for index in viewButtons.indices{
+            self.viewButtons[index].setTitle("⬜️", for: .normal)
+            self.viewButtons[index].isEnabled = false
+        }
+        for index in self.viewButtons.indices{
+            if myGame!.cells[index].hasMine{
+                self.viewButtons[index].setTitle("🌺", for: .normal)
+                
+            }
+        }
+          }
     func endGame(theBomb currentCell: Int){
         for index in viewButtons.indices{
             self.viewButtons[index].setTitle("⬜️", for: .normal)
