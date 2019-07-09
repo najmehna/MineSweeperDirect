@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MineSweeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="-14" translatesAutoresizingMaskIntoConstraints="NO" id="Ysf-TE-uVl">
+                                <rect key="frame" x="72" y="234" width="270" height="428"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YX5-vI-t4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-FY-1bk">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPN-Qv-Fkf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-nj-jUu">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJx-kW-AyB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q17-bG-2Uu">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdX-6G-tpE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yce-5Z-Mpz">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rL7-Rj-dYg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLo-9I-gE3">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="634-Od-Vlo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YV-3l-FGc">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ccx-vq-WNl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X0t-5w-cYv">
+                                        <rect key="frame" x="0.0" y="46" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRh-Hd-Oes">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sL-V7-NKT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sx-WM-IaV">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXm-6f-e8G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-dQ-WuC">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wdz-We-aaU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3V-5H-J7V">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWN-hO-e4K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-jH-dAS">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38k-Bc-Kjq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-lD-RH3">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qy-Xh-n1L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-r2-Ggu">
+                                        <rect key="frame" x="0.0" y="92" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53s-WS-ane">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5LF-c1-cB1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-Uv-YSO">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ny-F2-wsw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol9-qb-zeY">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwS-jU-msz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8N-vA-sBe">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihW-By-7dQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tey-Mk-Z5O">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ego-9S-434"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyY-cL-RDT">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iJ-rJ-yx1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SVP-yf-SmB">
+                                        <rect key="frame" x="0.0" y="138" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-Jf-j7W">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GlI-J4-XDU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-Al-2Oq">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYZ-hl-Vir"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvu-bO-QLj">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03L-lX-jpy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIT-by-PIt">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1W4-96-Vip"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoZ-ty-PGz">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gb7-5t-0CJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA8-9s-plW">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgq-DB-0Rn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zRQ-qW-n4J">
+                                        <rect key="frame" x="0.0" y="184" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7d-wd-TWS">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USw-DT-tPi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-NS-axL">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2c-zB-dNe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmz-3v-Sik">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJl-pe-g5K"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-8Z-Fvz">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFg-9y-jDJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-WY-1Od">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuF-X0-A15"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwC-Qv-87s">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVl-Or-Mb4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-wi-1zD">
+                                        <rect key="frame" x="0.0" y="230" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVN-lM-CIb">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JX-Rv-BcP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-Pc-pvr">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lC7-tv-7wx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOl-2r-Zi1">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JJ-s4-yi8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjB-AL-wmg">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eb-Pg-hft"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-o1-IHq">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etG-P6-Fsy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en1-92-Ad9">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3B-Fy-4jn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-tF-I8k">
+                                        <rect key="frame" x="0.0" y="276" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-6q-7ux">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpN-Ak-mHU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foe-2w-1dN">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0B-EP-Ysz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W04-Db-uTm">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiq-sO-X9s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-vQ-HF9">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBf-E8-kac"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6F-BW-NlW">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Re-q1-z6p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCX-rE-Aoi">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpV-Az-Lkm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9wy-ze-c5A">
+                                        <rect key="frame" x="0.0" y="322" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuW-Ud-FCP">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvN-8w-8tG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXg-4Z-JnD">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzX-ER-WKN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWR-Ak-Xun">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kKg-VT-rpf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-eV-KkL">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPp-Lj-S42"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBP-SR-a8F">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjO-7L-a0j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnd-6K-vUG">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfE-Yy-pHr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XTc-Wi-DwY">
+                                        <rect key="frame" x="0.0" y="368" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-Q2-B7G">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQd-E6-sZp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY1-2h-8RS">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qak-Yb-nHz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyV-sy-YOn">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEK-Vf-QjD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqf-XF-Ud1">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMQ-zx-Zu0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQM-do-N8R">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etA-Yj-eam"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SU-GQ-d9B">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="⬛️"/>
+                                                <connections>
+                                                    <action selector="revealButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FeR-is-g8v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7K-LX-vA7">
+                                <rect key="frame" x="136" y="93" width="143" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="restartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aR3-tE-LiO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="viewButtons" destination="ZmX-FY-1bk" collectionClass="NSMutableArray" id="NeG-AH-47D"/>
+                        <outletCollection property="viewButtons" destination="bQx-nj-jUu" collectionClass="NSMutableArray" id="tfi-of-0uc"/>
+                        <outletCollection property="viewButtons" destination="q17-bG-2Uu" collectionClass="NSMutableArray" id="olz-I8-ivG"/>
+                        <outletCollection property="viewButtons" destination="Yce-5Z-Mpz" collectionClass="NSMutableArray" id="jRa-Mw-Bg4"/>
+                        <outletCollection property="viewButtons" destination="qLo-9I-gE3" collectionClass="NSMutableArray" id="Pgh-sf-s4R"/>
+                        <outletCollection property="viewButtons" destination="5YV-3l-FGc" collectionClass="NSMutableArray" id="X2Y-ft-9dK"/>
+                        <outletCollection property="viewButtons" destination="mRh-Hd-Oes" collectionClass="NSMutableArray" id="JMb-uS-xTA"/>
+                        <outletCollection property="viewButtons" destination="9sx-WM-IaV" collectionClass="NSMutableArray" id="3Xi-vy-ibu"/>
+                        <outletCollection property="viewButtons" destination="YWg-dQ-WuC" collectionClass="NSMutableArray" id="Mms-OE-e5x"/>
+                        <outletCollection property="viewButtons" destination="s3V-5H-J7V" collectionClass="NSMutableArray" id="UEr-FS-bce"/>
+                        <outletCollection property="viewButtons" destination="Nxl-jH-dAS" collectionClass="NSMutableArray" id="E8j-wt-Bmi"/>
+                        <outletCollection property="viewButtons" destination="eCy-lD-RH3" collectionClass="NSMutableArray" id="Cw5-s0-75I"/>
+                        <outletCollection property="viewButtons" destination="53s-WS-ane" collectionClass="NSMutableArray" id="PVg-br-7Ic"/>
+                        <outletCollection property="viewButtons" destination="KlR-Uv-YSO" collectionClass="NSMutableArray" id="Spe-m1-XV6"/>
+                        <outletCollection property="viewButtons" destination="Ol9-qb-zeY" collectionClass="NSMutableArray" id="Jen-vg-q0P"/>
+                        <outletCollection property="viewButtons" destination="m8N-vA-sBe" collectionClass="NSMutableArray" id="Nxt-Y2-9Oo"/>
+                        <outletCollection property="viewButtons" destination="tey-Mk-Z5O" collectionClass="NSMutableArray" id="d4z-DC-JU0"/>
+                        <outletCollection property="viewButtons" destination="jyY-cL-RDT" collectionClass="NSMutableArray" id="MHM-Td-48K"/>
+                        <outletCollection property="viewButtons" destination="OHb-Jf-j7W" collectionClass="NSMutableArray" id="v0N-cW-gJg"/>
+                        <outletCollection property="viewButtons" destination="EuS-Al-2Oq" collectionClass="NSMutableArray" id="p69-JA-ReB"/>
+                        <outletCollection property="viewButtons" destination="hvu-bO-QLj" collectionClass="NSMutableArray" id="EEx-7f-0pp"/>
+                        <outletCollection property="viewButtons" destination="MIT-by-PIt" collectionClass="NSMutableArray" id="Jkg-5u-nW6"/>
+                        <outletCollection property="viewButtons" destination="hoZ-ty-PGz" collectionClass="NSMutableArray" id="xXC-rZ-NjV"/>
+                        <outletCollection property="viewButtons" destination="iA8-9s-plW" collectionClass="NSMutableArray" id="HNe-P7-V1E"/>
+                        <outletCollection property="viewButtons" destination="l7d-wd-TWS" collectionClass="NSMutableArray" id="N8O-SB-n0D"/>
+                        <outletCollection property="viewButtons" destination="e5e-NS-axL" collectionClass="NSMutableArray" id="ALL-lf-dm6"/>
+                        <outletCollection property="viewButtons" destination="Fmz-3v-Sik" collectionClass="NSMutableArray" id="BTf-4N-1RM"/>
+                        <outletCollection property="viewButtons" destination="cXw-8Z-Fvz" collectionClass="NSMutableArray" id="c4Z-Lc-6GL"/>
+                        <outletCollection property="viewButtons" destination="AZa-WY-1Od" collectionClass="NSMutableArray" id="DF9-bh-erk"/>
+                        <outletCollection property="viewButtons" destination="gwC-Qv-87s" collectionClass="NSMutableArray" id="N8Y-ZX-mPV"/>
+                        <outletCollection property="viewButtons" destination="RVN-lM-CIb" collectionClass="NSMutableArray" id="peQ-lh-MIj"/>
+                        <outletCollection property="viewButtons" destination="1qe-Pc-pvr" collectionClass="NSMutableArray" id="Jj4-6f-UqM"/>
+                        <outletCollection property="viewButtons" destination="YOl-2r-Zi1" collectionClass="NSMutableArray" id="TNg-vp-OEh"/>
+                        <outletCollection property="viewButtons" destination="QjB-AL-wmg" collectionClass="NSMutableArray" id="qZQ-LY-eC8"/>
+                        <outletCollection property="viewButtons" destination="RrS-o1-IHq" collectionClass="NSMutableArray" id="3cY-Xb-dKB"/>
+                        <outletCollection property="viewButtons" destination="en1-92-Ad9" collectionClass="NSMutableArray" id="ypa-8u-lBn"/>
+                        <outletCollection property="viewButtons" destination="Ahd-6q-7ux" collectionClass="NSMutableArray" id="DzR-qD-rQJ"/>
+                        <outletCollection property="viewButtons" destination="foe-2w-1dN" collectionClass="NSMutableArray" id="Vpk-1W-V3k"/>
+                        <outletCollection property="viewButtons" destination="W04-Db-uTm" collectionClass="NSMutableArray" id="R7z-I1-I3w"/>
+                        <outletCollection property="viewButtons" destination="gHM-vQ-HF9" collectionClass="NSMutableArray" id="yT8-p3-hLt"/>
+                        <outletCollection property="viewButtons" destination="c6F-BW-NlW" collectionClass="NSMutableArray" id="d2W-9Z-L7y"/>
+                        <outletCollection property="viewButtons" destination="GCX-rE-Aoi" collectionClass="NSMutableArray" id="eAl-Pr-knL"/>
+                        <outletCollection property="viewButtons" destination="OuW-Ud-FCP" collectionClass="NSMutableArray" id="ZDS-aI-ACL"/>
+                        <outletCollection property="viewButtons" destination="hXg-4Z-JnD" collectionClass="NSMutableArray" id="u5S-BZ-R6r"/>
+                        <outletCollection property="viewButtons" destination="tWR-Ak-Xun" collectionClass="NSMutableArray" id="tLb-TP-6fQ"/>
+                        <outletCollection property="viewButtons" destination="gPz-eV-KkL" collectionClass="NSMutableArray" id="06g-CJ-nAv"/>
+                        <outletCollection property="viewButtons" destination="SBP-SR-a8F" collectionClass="NSMutableArray" id="M34-g4-wFl"/>
+                        <outletCollection property="viewButtons" destination="Tnd-6K-vUG" collectionClass="NSMutableArray" id="FZG-Da-x8K"/>
+                        <outletCollection property="viewButtons" destination="cD4-Q2-B7G" collectionClass="NSMutableArray" id="nQO-xk-ZN9"/>
+                        <outletCollection property="viewButtons" destination="nY1-2h-8RS" collectionClass="NSMutableArray" id="En9-Up-dBD"/>
+                        <outletCollection property="viewButtons" destination="DyV-sy-YOn" collectionClass="NSMutableArray" id="UBu-Wu-xhs"/>
+                        <outletCollection property="viewButtons" destination="Bqf-XF-Ud1" collectionClass="NSMutableArray" id="9uv-R6-0yG"/>
+                        <outletCollection property="viewButtons" destination="PQM-do-N8R" collectionClass="NSMutableArray" id="ggi-MT-aK5"/>
+                        <outletCollection property="viewButtons" destination="1SU-GQ-d9B" collectionClass="NSMutableArray" id="9UN-Ub-IOW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
