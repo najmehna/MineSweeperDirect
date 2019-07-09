@@ -93,7 +93,7 @@ class Game{
     func revealCell(_ currentCell: Int)-> Bool{
         print("revealing cell: \(currentCell)")
         if self.cells[currentCell].hasMine {
-            
+            gameState = .clickedBomb
             return false
         } else{
             self.cells[currentCell].revealed = true

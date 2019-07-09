@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var viewButtons: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
+        for index in viewButtons.indices{
+            let button = viewButtons[index]
+            let image = UIImage(named: "lightGreyBackground")
+            button.setBackgroundImage(image, for: .normal)
+            
+        }
         // Do any additional setup after loading the view.
         startNewGame()
         
