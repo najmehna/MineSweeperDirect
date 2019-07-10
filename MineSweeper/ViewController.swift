@@ -38,31 +38,28 @@ class ViewController: UIViewController {
             print(cellNumber)
             myGame!.revealCell(cellNumber)
             switch myGame!.gameState{
-            case .clickedBomb: endGame(theBomb: cellNumber)
+            case .clickedBomb: endGame(win: false)//endGame(theBomb: cellNumber)
             case .onGoing: updateView()
-            case .youWon: celebrate()
+            case .youWon: endGame(win: true)//elebrate()
             }
         }
     }
-    func celebrate(){
+  
+    func endGame(win: Bool){
+        var bombs:String
+        bombs = win ? "🌺": "💣"
         for index in viewButtons.indices{
             self.viewButtons[index].setTitle("⬜️", for: .normal)
             self.viewButtons[index].isEnabled = false
         }
         for index in self.viewButtons.indices{
             if myGame!.cells[index].hasMine{
-                self.viewButtons[index].setTitle("🌺", for: .normal)
+                self.viewButtons[index].setTitle(bombs, for: .normal)
                 
             }
         }
-          }
-    func endGame(theBomb currentCell: Int){
-        for index in viewButtons.indices{
-            self.viewButtons[index].setTitle("⬜️", for: .normal)
-            self.viewButtons[index].isEnabled = false
-        }
-        self.viewButtons[currentCell].setTitle("💣", for: .normal)
     }
+    
     func updateView(){
         for cellIndex in myGame!.cells.indices{
             self.viewButtons[cellIndex].setTitle("⬛️", for: .normal)
