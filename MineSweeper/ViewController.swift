@@ -40,7 +40,7 @@ class ViewController: UIViewController {
             switch myGame!.gameState{
             case .clickedBomb: endGame(win: false)//endGame(theBomb: cellNumber)
             case .onGoing: updateView()
-            case .youWon: endGame(win: true)//elebrate()
+            case .youWon: endGame(win: true)//celebrate()
             }
         }
     }

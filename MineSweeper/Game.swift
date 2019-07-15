@@ -109,21 +109,23 @@ class Game{
         if self.cells[currentCell].hasMine {
             gameState = .clickedBomb
         } else{
-            self.cells[currentCell].revealed = true
-            if foundAllBombs{
-                gameState = .youWon
-            }else{
-            let neighbors = neighborBombs(index: currentCell)
-            if neighbors == 0 {
-                for neighbor in myNeighbors(currentCell){
-                    if !self.cells[neighbor].revealed{
-                        print("Revealing the neighbor: \(neighbor)")
-                        revealCell(neighbor)
-                        self.cells[neighbor].revealed = true
+            if self.cells[currentCell].revealed == false{
+                self.cells[currentCell].revealed = true
+                if foundAllBombs{
+                    gameState = .youWon
+                }else{
+                    let neighbors = neighborBombs(index: currentCell)
+                    if neighbors == 0 {
+                        for neighbor in myNeighbors(currentCell){
+                            if !self.cells[neighbor].revealed{
+                                print("Revealing the neighbor: \(neighbor)")
+                                revealCell(neighbor)
+                                self.cells[neighbor].revealed = true
+                            }
+                        }
                     }
+                    gameState = .onGoing
                 }
-            }
-                gameState = .onGoing
             }
         }
     }
